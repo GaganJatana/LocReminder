@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="chicmic.com.locreminder.alarm.Create"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/task"
+        android:layout_margin="@dimen/laoout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+            <android.support.design.widget.TextInputEditText
+                android:background="@drawable/layoutt"
+                android:id="@+id/name"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                style="@style/input"
+                android:hint="@string/task_name" />
+
+
+            <android.support.design.widget.TextInputEditText
+                android:background="@drawable/layoutt"
+                android:id="@+id/location"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                style="@style/input"
+                android:hint="@string/location" />
+
+        <TextView
+            android:id="@+id/date_error"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/error_size"
+           android:layout_margin="1dp"
+           android:textColor="@color/red"
+           android:text="checking"
+           android:visibility="gone"
+           style="@style/input"/>
+
+            <TextView
+                android:background="@drawable/layoutt"
+                android:id="@+id/datepicker"
+                android:onClick="date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                style="@style/input"
+                android:hint="@string/date" />
+
+        <TextView
+            android:id="@+id/time_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/error_size"
+            android:layout_margin="1dp"
+            android:textColor="@color/red"
+            android:hint="checking"
+            android:visibility="gone"
+            style="@style/input"/>
+
+            <TextView
+                android:background="@drawable/layoutt"
+                android:id="@+id/timepicker"
+                android:onClick="time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                style="@style/input"
+                android:hint="@string/time" />
+
+        <Button
+            android:onClick="addToDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_button"
+            style="@style/button"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

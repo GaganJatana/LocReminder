@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Loc Reminder</string>
+    <string name="location">Location</string>
+    <string name="task_name">Task Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="add_button">Add</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="repeat">Repeat</string>
+    <string name="delay">Time to delay</string>
+    <string name="five_minute">5 Minute</string>
+    <string name="ten_Minute">10 Minute</string>
+    <string name="snooze">Snooze ?</string>
+    <string name="add_task">Add Task</string>
+    <string name="cant_empty">Cant BE Empty</string>
+    <string name="date_invalid">Date cant be less then current date</string>
+    <string name="time_invalid">Time cant be less then present time</string>
+    <string name="no_address">No such Address found</string>
+</resources>
